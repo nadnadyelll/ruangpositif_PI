@@ -1,0 +1,96 @@
+/* IMPORT FONT SATOSHI FROM WEB */
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+/* STYLE DEFAULT HALAMAN */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+/* STYLE BODY */
+body {
+  font-family: "Satoshi", sans-serif;
+  display: inline-flex;
+}
+
+/* STYLE FRAME 1 */
+
+.frame1 {
+  margin-top: 2rem;
+  margin-left: 8rem;
+  margin-right: 10rem;
+  text-align: center;
+}
+
+.frame1 img {
+  max-width: 6rem;
+}
+
+.frame1 .content {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.frame1 .form {
+  text-align: left;
+}
+
+.frame1 .email {
+  padding: 1rem;
+  width: 30rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.frame1 .password {
+  padding: 1rem;
+  width: 30rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.frame1 .remember a {
+  margin-left: 15rem;
+  text-decoration: none;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  width: 28rem;
+  border: 1px solid #2b2358;
+  background-color: #2b2358;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 3rem;
+}
+
+.btn button:hover {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* STYLE FRAME 2 GAMBAR */
+
+.image img {
+  position: absolute;
+  height: 40rem;
+  width: 40rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}

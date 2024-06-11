@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+
+    <!-- LINK BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="css/profile.css" />
+
+    <!-- LINK ANIMATION AOS EFFECT -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- LINK GOOGLE ICON -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+
+    <nav data-aos="fade-down" data-aos-duration="1000">
+      <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+      <ul class="nav-link">
+        <li class="link"><a href="affirmation.html">Afirmasi</a></li>
+        <li class="link"><a href="mood_CheckIn1.html">Mood Check-in</a></li>
+        <li class="link"><a href="schedule.html">Pengingat</a></li>
+      </ul>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Cari..." />
+        <span class="material-symbols-outlined"> search </span>
+      </div>
+      <span class="material-symbols-outlined"> notifications </span>
+      <div class="user-profile">
+        <a href="profile.html"><img src="images/user_profile.png" alt="user" /></a>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <!-- SECTION PROFILE -->
+      <section class="profile">
+            <img src="images/profile.png" alt="profile" width="212" height="212" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+            <div class="wrapper" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                <div class="large-text">John Doe</div>
+                <div class="button">
+                    <button type="button" class="button-edit">Sunting Profil</button>
+                    <button type="button" class="button-settings"><svg width="28" height="28" viewBox="0 0 28 28"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.9993 8.93749C12.998 8.93749 12.0192 9.2344 11.1867 9.79067C10.3542 10.3469 9.70528 11.1376 9.32211 12.0627C8.93895 12.9877 8.83869 14.0056 9.03403 14.9876C9.22937 15.9697 9.71152 16.8717 10.4195 17.5797C11.1275 18.2877 12.0296 18.7699 13.0116 18.9652C13.9936 19.1605 15.0115 19.0603 15.9366 18.6771C16.8616 18.294 17.6523 17.6451 18.2086 16.8126C18.7648 15.98 19.0618 15.0013 19.0618 14C19.0604 12.6578 18.5265 11.3709 17.5774 10.4218C16.6283 9.4727 15.3415 8.93888 13.9993 8.93749ZM13.9993 17.375C13.3317 17.375 12.6792 17.177 12.1242 16.8062C11.5692 16.4353 11.1366 15.9082 10.8812 15.2915C10.6257 14.6748 10.5589 13.9962 10.6891 13.3416C10.8193 12.6869 11.1408 12.0855 11.6128 11.6135C12.0848 11.1415 12.6861 10.8201 13.3408 10.6898C13.9955 10.5596 14.6741 10.6264 15.2908 10.8819C15.9075 11.1373 16.4346 11.5699 16.8055 12.1249C17.1763 12.68 17.3743 13.3325 17.3743 14C17.3743 14.8951 17.0187 15.7535 16.3857 16.3865C15.7528 17.0194 14.8944 17.375 13.9993 17.375ZM23.2805 14.2278C23.2847 14.0759 23.2847 13.924 23.2805 13.7722L24.8541 11.8062C24.9366 11.703 24.9937 11.5819 25.0208 11.4525C25.0479 11.3232 25.0443 11.1893 25.0102 11.0616C24.7522 10.0919 24.3663 9.16092 23.8627 8.29307C23.7967 8.1795 23.7052 8.08289 23.5953 8.01093C23.4855 7.93898 23.3603 7.89366 23.2299 7.87858L20.7282 7.60014C20.6241 7.49046 20.5186 7.38499 20.4118 7.28374L20.1164 4.77569C20.1013 4.64513 20.0558 4.51993 19.9836 4.41006C19.9115 4.30019 19.8147 4.2087 19.7009 4.14288C18.8327 3.64016 17.9018 3.25466 16.9323 2.99643C16.8046 2.96247 16.6706 2.95899 16.5413 2.98629C16.412 3.01359 16.2909 3.07089 16.1877 3.15358L14.2271 4.71874C14.0752 4.71874 13.9233 4.71874 13.7714 4.71874L11.8055 3.14831C11.7023 3.0658 11.5811 3.00869 11.4518 2.98157C11.3225 2.95446 11.1886 2.95811 11.0609 2.99221C10.0914 3.25064 9.16041 3.6365 8.29234 4.13971C8.17877 4.20566 8.08216 4.29721 8.0102 4.40707C7.93824 4.51692 7.89292 4.64207 7.87785 4.77253L7.59941 7.27846C7.48972 7.38323 7.38425 7.4887 7.283 7.59487L4.77496 7.8828C4.6444 7.89799 4.5192 7.94347 4.40933 8.01562C4.29946 8.08776 4.20797 8.18458 4.14215 8.29835C3.63943 9.16653 3.25392 10.0975 2.9957 11.0669C2.96174 11.1946 2.95826 11.3286 2.98556 11.4579C3.01285 11.5873 3.07016 11.7084 3.15285 11.8115L4.718 13.7722C4.718 13.924 4.718 14.0759 4.718 14.2278L3.14758 16.1937C3.06507 16.297 3.00795 16.4181 2.98084 16.5474C2.95373 16.6768 2.95737 16.8107 2.99148 16.9383C3.24945 17.908 3.63534 18.8391 4.13898 19.7069C4.20493 19.8205 4.29647 19.9171 4.40633 19.989C4.51619 20.061 4.64133 20.1063 4.77179 20.1214L7.27351 20.3998C7.37828 20.5095 7.48375 20.615 7.58992 20.7162L7.88207 23.2243C7.89726 23.3548 7.94274 23.48 8.01488 23.5899C8.08703 23.6998 8.18385 23.7913 8.29761 23.8571C9.16579 24.3598 10.0967 24.7453 11.0662 25.0035C11.1939 25.0375 11.3279 25.041 11.4572 25.0137C11.5865 24.9864 11.7076 24.9291 11.8108 24.8464L13.7714 23.2812C13.9233 23.2855 14.0752 23.2855 14.2271 23.2812L16.193 24.8548C16.2962 24.9373 16.4174 24.9945 16.5467 25.0216C16.6761 25.0487 16.8099 25.045 16.9376 25.0109C17.9073 24.753 18.8383 24.3671 19.7062 23.8634C19.8197 23.7975 19.9163 23.7059 19.9883 23.5961C20.0603 23.4862 20.1056 23.3611 20.1207 23.2306L20.3991 20.7289C20.5088 20.6248 20.6143 20.5194 20.7155 20.4125L23.2236 20.1172C23.3541 20.102 23.4793 20.0565 23.5892 19.9844C23.699 19.9122 23.7905 19.8154 23.8564 19.7016C24.3591 18.8334 24.7446 17.9025 25.0028 16.9331C25.0368 16.8053 25.0402 16.6714 25.013 16.542C24.9857 16.4127 24.9284 16.2916 24.8457 16.1885L23.2805 14.2278ZM21.5825 13.5423C21.6004 13.8471 21.6004 14.1528 21.5825 14.4577C21.5699 14.6665 21.6353 14.8724 21.766 15.0357L23.2626 16.9057C23.0908 17.4514 22.871 17.9808 22.6055 18.4877L20.2219 18.7577C20.0143 18.7807 19.8227 18.8799 19.684 19.0361C19.481 19.2645 19.2648 19.4807 19.0364 19.6837C18.8803 19.8224 18.781 20.014 18.758 20.2216L18.4933 22.6031C17.9865 22.8687 17.4571 23.0885 16.9112 23.2601L15.0402 21.7635C14.8905 21.6439 14.7045 21.5788 14.5129 21.579H14.4623C14.1574 21.5969 13.8517 21.5969 13.5468 21.579C13.3381 21.5664 13.1321 21.6318 12.9688 21.7625L11.0936 23.2601C10.5478 23.0884 10.0184 22.8685 9.51156 22.6031L9.24156 20.2226C9.21852 20.0151 9.11931 19.8234 8.96312 19.6848C8.73479 19.4817 8.51856 19.2655 8.31554 19.0372C8.17689 18.881 7.98523 18.7818 7.77765 18.7587L5.39617 18.493C5.13059 17.9862 4.9107 17.4567 4.7391 16.9109L6.2357 15.0399C6.36638 14.8767 6.43178 14.6707 6.41922 14.4619C6.40129 14.157 6.40129 13.8514 6.41922 13.5465C6.43178 13.3377 6.36638 13.1318 6.2357 12.9685L4.7391 11.0943C4.91083 10.5486 5.13072 10.0191 5.39617 9.51229L7.7766 9.24229C7.98418 9.21925 8.17583 9.12004 8.31449 8.96385C8.51751 8.73552 8.73374 8.51929 8.96207 8.31628C9.11887 8.17753 9.21849 7.98543 9.24156 7.77733L9.50629 5.3969C10.0131 5.13132 10.5425 4.91143 11.0883 4.73983L12.9593 6.23643C13.1226 6.36711 13.3286 6.43251 13.5373 6.41995C13.8422 6.40202 14.1479 6.40202 14.4528 6.41995C14.6615 6.43251 14.8675 6.36711 15.0307 6.23643L16.9049 4.73983C17.4507 4.91156 17.9801 5.13145 18.4869 5.3969L18.7569 7.77733C18.78 7.98491 18.8792 8.17656 19.0354 8.31522C19.2637 8.51824 19.4799 8.73447 19.683 8.9628C19.8216 9.11898 20.0133 9.21819 20.2209 9.24124L22.6023 9.50596C22.8679 10.0127 23.0878 10.5422 23.2594 11.088L21.7628 12.959C21.6309 13.1236 21.5654 13.3317 21.5793 13.5423H21.5825Z"
+                                fill="#282533" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION FAVORITE & TERSIMPAN -->
+        <section class="favourite" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+            <button type="button" class="button-fav">Tersimpan</button>
+            <!-- CARD -->
+            <div class="card-fav">
+                <div class="card-one">
+                    <div class="card-text">Setiap hari adalah kesempatan baru untuk mencapai sesuatu yang luar biasa.
+                    </div>
+                </div>
+
+                <div class="card-two">
+                    <div class="card-text"> Pikiran positif dan tindakan gigih adalah kunci untuk meraih impianmu.</div>
+                </div>
+
+                <div class="card-three">
+                    <div class="card-text">Jangan pernah ragu akan kemampuanmu. Kamu memiliki potensi yang luar biasa.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER & COPYRIGHT -->
+
+    <footer>
+      <div class="content-6">
+        <ul class="nav-link">
+          <li id="link1" class="link"><a href="index.html">Beranda</a></li>
+          <li id="link2" class="link"><a href="index.html">Tentang Kami</a></li>
+          <li id="link3" class="link"><a href="index.html">Fitur Kami</a></li>
+        </ul>
+        <img src="images/logo.png" alt="photo4" />
+        <ul class="nav-link">
+          <li id="link1" class="link"><a href="#">Instagram</a></li>
+          <li id="link2" class="link"><a href="#">Facebook</a></li>
+          <li id="link3" class="link"><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Copyright © 2024 Ruang Positif | All Rights Reserved</p>
+      </div>
+    </footer>
+
+
+    <!-- LINK JS -->
+    <script src="#"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS AOS EFFECT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

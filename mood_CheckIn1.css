@@ -1,0 +1,224 @@
+/* IMPORT FONT SATOSHI FROM WEB */
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+/* STYLE DEFAULT HALAMAN */
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+/* STYLE BODY */
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+/* STYLE NAVBAR */
+nav {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; 
+  z-index: 1000; 
+  border-bottom: 4px solid #EBEBEB;
+}
+
+nav img {
+  margin-left: 2rem;
+  max-width: 6rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.link {
+  margin-right: 1.68rem;
+}
+
+.link a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #000000;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ff7c3f;
+  transition: all 0.5s ease;
+}
+
+.link a:hover::after {
+  width: 70%;
+}
+
+.search-bar {
+  padding: 0.3rem;
+  width: 15rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+  margin-left: 24rem;
+}
+
+.search-bar input {
+  padding-left: 1rem;
+  width: 80%;
+  border: none;
+  outline: none;
+}
+
+.material-symbols-outlined {
+  margin-left: 1rem;
+}
+
+.user-profile {
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+/* STYLE HEADER KONTEN */
+
+.hero1 {
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 8rem;
+  
+}
+
+/* STYLE CARD EMOJI */
+
+.hero1 .mood {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 2rem;
+}
+
+.card {
+  border: 1px solid #dbdbdb;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+}
+
+.card h5 span {
+  font-weight: bold;
+  padding-bottom: 1rem;
+  margin: auto;
+  text-align: left;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+/* STYLE BUTTON */
+
+.btn {
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 25rem;
+  border: 1px solid #2B2358;
+  background-color: #2B2358;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 3rem;
+}
+
+.btn button:hover {
+  background-color: #fff;
+  color: #2B2358;
+}
+
+/* STYLE FOOTER & COPYRIGHT */
+
+footer {
+  max-width: 1500px;
+  height: 250px;
+  padding-top: 3rem;
+  background-color: #cde4e1;
+}
+
+footer .content-6 {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-left: 6.66rem;
+}
+
+footer img {
+  max-width: 6rem;
+  margin-right: 8rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .nav-link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-right: 10rem;
+}
+
+footer .link a {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #000000;
+}
+
+footer .link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ff7c3f;
+  transition: all 0.5s ease;
+}
+
+footer .link a:hover::after {
+  width: 70%;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+/* STYLE GARIS PADA FOOTER */
+
+hr {
+  border: none;
+  height: 3px;
+  max-width: auto;
+  color: #000000;
+  background-color: #000000;
+  margin-bottom: 4rem;
+}

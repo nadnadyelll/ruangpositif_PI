@@ -1,0 +1,241 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+/* STYLE DEFAULT HALAMAN */
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+/* STYLE BODY */
+body {
+  font-family: "Satoshi", sans-serif;
+  display: inline-flex;
+}
+
+/* STYLE FRAME 1 */
+
+.login {
+  background: #fffdf9;
+  justify-content: center;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.frame-427318910 {
+  background: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
+}
+
+.frame {
+  justify-content: flex-start;
+  align-items: center;
+  display: grid;
+}
+
+.Frame6 {
+  align-self: stretch;
+  height: 666px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  display: flex;
+  margin-left: 6rem;
+}
+
+.Frame2 {
+  align-self: stretch;
+  height: 666px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: flex;
+}
+
+.logo {
+  width: 300px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  float: center;
+  padding-left: 140px;
+  padding-bottom: 25px;
+}
+
+.MulaiWujudkanDiriTerbaikmu {
+  color: #1b1b1b;
+  font-size: 2rem;
+  font-family: satoshi;
+  font-weight: 400px;
+  word-wrap: break-word;
+  margin-left: 6rem;
+}
+
+.DapatkanAksesKeAfirmasiPositifLacakPerkembanganmuDanAturPengingatJadwal {
+  color: #1b1b1b;
+  font-size: 1rem;
+  font-family: satoshi;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-left: 6rem;
+  margin-bottom: 1rem;
+}
+
+.informasi {
+  color: #1b1b1b;
+  font-size: 18px;
+  font-family: satoshi;
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+/* STYLE FORM INPUT */
+.FormInput {
+  padding: 1rem;
+  width: 30rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  background-color: #F5F7FA;
+}
+
+input {
+    background-color: #F5F7FA;
+    font-size: 0.8rem;
+}
+
+.MasukanKalimat {
+  flex: 1 2 0;
+  color: #636262;
+  font-size: 10px;
+  font-family: satoshi;
+  font-weight: 5000px;
+  line-height: 15px;
+  word-wrap: break-word;
+  padding-right: 80px;
+}
+
+.input {
+  align-self: stretch;
+  height: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: flex;
+}
+
+.Image {
+  position: absolute;
+  height: 70rem;
+  width: 42rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.Vector {
+  width: 22.5px;
+  height: 15px;
+  background: #636262;
+}
+
+.Frame3 {
+  align-self: stretch;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.Input {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.checkbox-container {
+  color: #1b1b1b;
+  font-size: 16px;
+  font-family: satoshi;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+  padding-top: 50px;
+}
+
+.LupaPassword {
+  color: #1b1b1b;
+  font-size: 16px;
+  font-family: satoshi;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+  padding-top: 50px;
+  padding-left: 350px;
+}
+
+.Button {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 0.5rem;
+  color: #fff;
+  width: 30rem;
+  border: 1px solid #2b2358;
+  background-color: #2b2358;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-bottom: 3rem;
+}
+
+.Button:hover {
+  background-color: #fff;
+  border: 1px solid #2b2358;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.Daftar {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: satoshi;
+  font-weight: 400;
+  line-height: 10px;
+  word-wrap: break-word;
+}
+
+.SudahPunyaAkunMasuk {
+  color: #1b1b1b;
+  font-size: 18px;
+  font-family: satoshi;
+  font-weight: 400;
+  line-height: 10px;
+  word-wrap: break-word;
+  padding-left: 165px;
+  padding-bottom: 100px;
+}
+
+span {
+  color: #0069e5;
+  font-size: 15px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+}

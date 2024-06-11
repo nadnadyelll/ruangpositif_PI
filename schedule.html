@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule</title>
+
+    <!-- LINK BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="css/schedule.css" />
+
+    <!-- LINK ANIMATION AOS EFFECT -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- LINK GOOGLE ICON -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+
+    <nav data-aos="fade-down" data-aos-duration="1000">
+      <a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+      <ul class="nav-link">
+        <li class="link"><a href="affirmation.html">Afirmasi</a></li>
+        <li class="link"><a href="mood_CheckIn1.html">Mood Check-in</a></li>
+        <li class="link"><a href="schedule.html">Pengingat</a></li>
+      </ul>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Cari..." />
+        <span class="material-symbols-outlined"> search </span>
+      </div>
+      <span class="material-symbols-outlined"> notifications </span>
+      <div class="user-profile">
+        <a href="profile.html"><img src="images/user_profile.png" alt="user" /></a>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <!-- FRAME 1 -->
+      <section class="frame1">
+        <!-- BUTTON TAMBAH PENGINGAT -->
+        <div class="btn" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+          <button id="openPopup">Tambah</button>
+        </div>
+
+        <!-- CALENDAR DENGAN PROGRAM JS -->
+        <div class="wrapper">
+          <header>
+            <p class="current-date"></p>
+            <div class="icons">
+              <span id="prev" class="material-symbols-rounded"
+                >chevron_left</span
+              >
+              <span id="next" class="material-symbols-rounded"
+                >chevron_right</span
+              >
+            </div>
+          </header>
+          <div class="calendar">
+            <ul class="weeks">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+            </ul>
+            <ul class="days"></ul>
+          </div>
+        </div>
+
+        <!-- LIST CATEGORY -->
+        <div class="category">
+          <div class="cat-1">
+            <input type="checkbox" name="category1" id="category1" />
+            <label for="category1">Law of Attraction</label>
+          </div>
+          <div class="cat-2">
+            <input type="checkbox" name="category2" id="category2" />
+            <label for="category2">Kepercayaan Diri</label>
+          </div>
+          <div class="cat-3">
+            <input type="checkbox" name="category3" id="category3" />
+            <label for="category3">Kesehatan Fisik</label>
+          </div>
+          <div class="cat-4">
+            <input type="checkbox" name="category4" id="category4" />
+            <label for="category4">Keuangan</label>
+          </div>
+          <div class="cat-5">
+            <input type="checkbox" name="category5" id="category5" />
+            <label for="category5">Produktivitas</label>
+          </div>
+          <a href="#">Lainnya</a>
+        </div>
+      </section>
+
+      <!-- FRAME 2 -->
+      <section class="frame2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+        <!-- BUTTON PILIHAN HARI, PEKAN DLL -->
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Basic radio toggle button group"
+        >
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio1"
+            autocomplete="off"
+            checked
+          />
+          <label class="btn btn-outline-secondary" for="btnradio1">Hari</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio2"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="btnradio2">Pekan</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio3"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="btnradio3">Bulan</label>
+
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio4"
+            autocomplete="off"
+          />
+          <label class="btn btn-outline-secondary" for="btnradio4">Tahun</label>
+        </div>
+
+        <!-- HEADER KONTEN -->
+        <div class="header">
+          <h5>Maret 2024</h5>
+          <button class="btn-1">
+            <div class="icons">
+              <span id="prev" class="material-symbols-rounded"
+                >chevron_left</span
+              >
+              <span id="next" class="material-symbols-rounded"
+                >chevron_right</span
+              >
+            </div>
+            Hari ini
+          </button>
+        </div>
+        
+        <!-- TABLE PENGINGAT BERISI HARI & JAM -->
+        <div class="schedule">
+          <table>
+            <th>
+              <td>Min 17</td>
+              <td>Sen 18</td>
+              <td>Sel 19</td>
+              <td>Rab 20</td>
+              <td>Kam 21</td>
+              <td>Jum 22</td>
+              <td>Sab 23</td>
+            </th>
+            <tr>
+              <td>06.00</td>
+            </tr>
+            <tr>
+              <td>07.00</td>
+            </tr>
+            <tr>
+              <td>08.00</td>
+              
+            </tr>
+            <tr>
+              <td>09.00</td>
+            </tr>
+            <tr>
+              <td>10.00</td>             
+            </tr>
+            <tr>
+              <td>11.00</td>             
+            </tr>
+            <tr>
+              <td>12.00</td>             
+            </tr>
+            <tr>
+              <td>13.00</td>              
+            </tr>
+            <tr>
+              <td>14.00</td>            
+            </tr>
+            <tr>
+              <td>15.00</td>             
+            </tr>
+            <tr>
+              <td>16.00</td>             
+            </tr>
+            <tr>
+              <td>17.00</td>             
+            </tr>
+            <tr>
+              <td>18.00</td>             
+            </tr>
+            <tr>
+              <td>19.00</td>             
+            </tr>
+            <tr>
+              <td>20.00</td>             
+            </tr>
+            <tr>
+              <td>21.00</td>             
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- POOPUP FORM TAMBAH PENGINGAT -->
+    <div id="popupForm" class="popup">
+      <form class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Tambah Pengingat</h2>
+
+        <!-- INPUT CATEGORY -->
+        <div class="category">
+          <p>Kategori</p>
+          <select id="category">
+            <option disabled selected>Pilih Kategori</option>
+            <option>Law of Attraction</option>
+            <option>Kepercayaan Diri</option>
+            <option>Kesehatan Fisik</option>
+            <option>Keuangan</option>
+            <option>Produktivitas</option>
+          </select>
+        </div>
+        
+        <!-- INPUT DATE CALENDAR -->
+        <div class="date">
+          <p>Tanggal</p>
+          <input type="date" id="date" name="date" />
+        </div>
+
+        <!-- INPUT WAKTU -->
+        <div class="time">
+          <p>Waktu</p>
+          <select id="time">
+            <option disabled selected>Pilih Waktu</option>
+            <option>06.00</option>
+            <option>07.00</option>
+            <option>08.00</option>
+            <option>09.00</option>
+            <option>10.00</option>
+            <option>11.00</option>
+            <option>12.00</option>
+            <option>13.00</option>
+            <option>14.00</option>
+            <option>15.00</option>
+            <option>16.00</option>
+            <option>17.00</option>
+            <option>18.00</option>
+            <option>19.00</option>
+            <option>20.00</option>
+            <option>21.00</option>
+          </select>
+        </div>
+
+        <div class="daily">
+          <input type="checkbox" name="daily" id="daily" />
+          <label for="daily">Setiap Hari</label>
+        </div>
+        
+        <!-- BUTTON -->
+        <a href="scheduleRemind.html" class="submit-btn">
+          Submit
+        </a>
+      </form>      
+    </div>
+
+    <!-- FOOTER & COPYRIGHT -->
+
+    <footer>
+      <div class="content-6">
+        <ul class="nav-link">
+          <li id="link1" class="link"><a href="index.html">Beranda</a></li>
+          <li id="link2" class="link"><a href="index.html">Tentang Kami</a></li>
+          <li id="link3" class="link"><a href="index.html">Fitur Kami</a></li>
+        </ul>
+        <img src="images/logo.png" alt="photo4" />
+        <ul class="nav-link">
+          <li id="link1" class="link"><a href="#">Instagram</a></li>
+          <li id="link2" class="link"><a href="#">Facebook</a></li>
+          <li id="link3" class="link"><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Copyright © 2024 Ruang Positif | All Rights Reserved</p>
+      </div>
+    </footer>
+
+    
+    <!-- LINK JS -->
+    <script src="js/sechedule.js"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS AOS EFFECT -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
